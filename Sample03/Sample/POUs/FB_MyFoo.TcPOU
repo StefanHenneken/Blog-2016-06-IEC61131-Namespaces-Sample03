@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.6">
+  <POU Name="FB_MyFoo" Id="{dfa4b2f9-375e-485b-b1c1-6e3405e8ec5f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK PUBLIC FB_MyFoo EXTENDS MyNamespace01.FB_Foo IMPLEMENTS MyNamespace01.I_Foo
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="DoSomething" Id="{b75fdda0-0d73-4019-abcd-e4a1b86e5430}">
+      <Declaration><![CDATA[{warning 'add method implementation'}
+METHOD DoSomething : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

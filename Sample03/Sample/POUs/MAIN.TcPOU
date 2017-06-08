@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.6">
+  <POU Name="MAIN" Id="{b180a901-9060-4304-b58a-988ceafe4550}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	var01		:	INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[MyNamespace01.GVL01.var01 := 1;		// global variable of the GVL of the library
+GVL01.var01 := 2;					// global variable of the local GVL
+var01 := 3;							// local variable
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
